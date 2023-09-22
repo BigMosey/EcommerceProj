@@ -45,7 +45,7 @@ export function Sidebar(){
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
-    const { cart,clearCart } = useContext(CartContext);
+    const { cart,clearCart,total } = useContext(CartContext);
     return (
         <div>
         <div className={`sidebar ${isOpen ? "" : "sidebar-closed"}`}>
@@ -56,7 +56,7 @@ export function Sidebar(){
                <IoMdArrowForward className='text-2xl'/> 
              </div>
             </div>
-            <div> {cart.map(item => {
+            <div className="cartcolor"> {cart.map(item => {
               return <CartItem  item={item} key={item.id} /> ;
             })} 
             </div>
@@ -64,13 +64,16 @@ export function Sidebar(){
               <div className="totaltrashdiv">
                 {/* total */}
                   <div className="totaltrashdiv2">
-                    <span className="totalspan">Total:</span>$ 1000 
+                    <span className="totalspan">Total:</span>$ {parseFloat(total).toFixed(2)} 
                   </div>
                   {/* clear cart icon */}
                   <div onClick={clearCart} className="trashdiv">
                     <FiTrash2/>
                   </div>
               </div>
+              <Link to='/' className="viewcartdiv">View cart</Link>
+              <Link>Checkout</Link>
+
             </div>
         </div>
         </div>   

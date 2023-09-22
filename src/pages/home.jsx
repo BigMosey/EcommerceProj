@@ -2,6 +2,7 @@ import React, {useContext} from "react";
 import {ProductContext} from '../Contexts/ProductContext';
 import '../pages/styles.css'
 import Product from '../components/Product';
+import {Hero} from '../components/Hero';
 
 export function Home(){
     const { products } = useContext(ProductContext);
@@ -13,6 +14,7 @@ export function Home(){
     })
     return (
         <div>
+            <Hero/>
             <section className="py-16">
                 <div className="custom-container">
                     <div className="custom-grid">
