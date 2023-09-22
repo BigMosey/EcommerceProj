@@ -355,3 +355,126 @@ font-weight: 400;
   font-weight: 500;
   color: #000;
 }
+.checkoutdiv{
+  background: #080808;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+  font-weight: 500;
+  color: #dfd4d4;
+}
+.footer{
+  background: #000;
+  padding-top: 3rem; 
+  padding-bottom: 3rem;
+}
+.footertext{
+color: white; 
+text-align: center;
+}
+.loadingdiv{
+  height: 100vh; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+.productdetailsdiv {
+  padding-top: 8rem; 
+  padding-bottom: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .productdetailsdiv {
+    padding-top: 8rem; 
+    padding-bottom: 8rem; 
+  }
+}
+
+.productdetailsdiv {
+  height: 100vh; 
+  display: flex;
+  align-items: center;
+}
+/*.imagetextdiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh; 
+}
+*/
+.imagetextdiv {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+@media (min-width: 1024px) {
+  .imagetextdiv {
+    flex-direction: row; 
+  }
+}
+.picdiv {
+  max-width: 200px;
+}
+
+@media (min-width: 768px) {
+  .picdiv {
+    max-width: 640px;
+  }
+}
+.picdiv1 {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+  .picdiv1 {
+    margin-bottom: 0; 
+  }
+}
+
+.detailsdiv {
+  flex: 1;
+  text-align: center;
+  margin-left: 80px; 
+}
+
+@media (min-width: 768px) {
+  .detailsdiv {
+    text-align: left; 
+    margin-left: 160px; 
+  }
+}
+.producttitlediv{
+  font-size: 26px; 
+  font-weight: 500; 
+  margin-bottom: 2px; 
+  max-width: 450px; 
+  margin-left: 0;
+  margin-right: 0;
+}
+.productpricediv{
+  font-size: 1.25rem; 
+  color: #f56565;
+  font-weight: 500; 
+  margin-bottom: 1.5rem;
+}
+.productdescriptiondiv{
+  margin-bottom: 2rem;
+}
+.productbutton{
+  background: #000;
+  padding-top: 1rem; 
+  padding-bottom: 1rem;
+  color: #ffffff;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  cursor: pointer;
+}

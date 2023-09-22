@@ -45,13 +45,13 @@ export function Sidebar(){
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
-    const { cart,clearCart,total } = useContext(CartContext);
+    const { cart,clearCart,total, itemAmount } = useContext(CartContext);
     return (
         <div>
         <div className={`sidebar ${isOpen ? "" : "sidebar-closed"}`}>
         
             <div className="shoppingbag">
-            <div className="shoppingb">Shopping Bag (0)</div> 
+            <div className="shoppingb">Shopping Bag ({itemAmount})</div> 
              <div onClick={handleClose}className="cursor">
                <IoMdArrowForward className='text-2xl'/> 
              </div>
@@ -72,7 +72,7 @@ export function Sidebar(){
                   </div>
               </div>
               <Link to='/' className="viewcartdiv">View cart</Link>
-              <Link>Checkout</Link>
+              <Link to='/' className="checkoutdiv">Checkout</Link>
 
             </div>
         </div>
