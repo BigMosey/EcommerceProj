@@ -42,8 +42,8 @@ const myCategory = {
     
 }
 const myPrice = {
-    fontSize: '1.25rem', // Adjust font size as needed (e.g., 1.25rem for a little bigger)
-    fontWeight: '700', // Adjust font weight for bolder (e.g., 700 for bold)
+    fontSize: '1.25rem', 
+    fontWeight: '700', 
   };
 export default function Product({product}){
     const {addToCart} = useContext(CartContext);

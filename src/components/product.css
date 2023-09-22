@@ -52,7 +52,6 @@
     right: -100%;
   }
   
-  /* Define media queries for responsiveness */
   @media (min-width: 768px) {
     .sidebar {
       width: 35vw;
@@ -121,7 +120,7 @@ background: #769955;
   margin-left: 1rem;
   display: flex;
   align-items: center;
-  gap: 0.5rem; /* Adjust the gap between elements */
+  gap: 0.5rem; 
 }
 
 .cartlink {
@@ -164,13 +163,7 @@ background: #769955;
   flex-direction: column;
 }
 
-/*.totaldiv{
-  background-color: #079ca1;
-  display: flex;
-  font-size: 0.875rem;
-  height: 36px; 
-}
-*/ 
+
 .totaldiv {
   display: flex;
   font-size: 0.875rem;
@@ -397,15 +390,7 @@ text-align: center;
   display: flex;
   align-items: center;
 }
-/*.imagetextdiv{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 100vh; 
-}
-*/
+
 .imagetextdiv {
   display: flex;
   flex-direction: column; 

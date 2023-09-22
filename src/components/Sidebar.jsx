@@ -7,38 +7,7 @@ import { SidebarContext } from "../Contexts/SidebarContext";
 import { useContext } from "react";
 import { CartContext } from "../Contexts/CartContexts";
 
-/*const sidebarStyles = {
-    ".sidebar": {
-      width: "25%",
-      backgroundColor: "white",
-      position: "fixed",
-      top: 0,
-      right:0,
-      height: "100%",
-      boxShadow: "0px 8px 16px 0px rgba(0, 0, 0, 0.2)",
-      transition: "all 0.3s ease",
-      zIndex: 20,
-      padding: "1rem",
-    },
-  
-    ".sidebar:where(.isOpen):not(.isOpen)": {
-      right: "-100%",
-    },
-  
-    "@media (min-width: 768px)": {
-      ".sidebar": {
-        width: "35vw",
-      },
-    },
-  
-    "@media (min-width: 1280px)": {
-      ".sidebar": {
-        maxWidth: "30vw",
-        paddingLeft: "35px",
-      },
-    },
-  };
-  */
+
 export function Sidebar(){
 
     const { isOpen, handleClose } = useContext(SidebarContext)
