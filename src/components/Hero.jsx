@@ -1,6 +1,7 @@
 import React from 'react';
 import guyImage from '../img/guy.png';
 import { Link } from 'react-router-dom';
+import Sort from './sort';
 export function Hero  (){
     return <section className='hero'>
         
@@ -20,6 +21,9 @@ export function Hero  (){
                 Discover More
             </Link>
         </div>
+            <div>
+                <Sort/>
+            </div>
          {/* image  */}
          <div className='imgdiv'>
             <img src={guyImage} alt="" />

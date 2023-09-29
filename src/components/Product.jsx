@@ -13,11 +13,11 @@ const myStyle = {
     height: '3rem',
   };
 const myButton = {
-    position: 'absolute',
-    top: 0,
-    right: 0,
-    color: 'red',
-    background: 'none',
+  position: 'absolute',
+  top: 0,
+  right: 0,
+  color: 'red',
+  background: 'none',
     border: 'none',
     cursor: 'pointer',
 }
